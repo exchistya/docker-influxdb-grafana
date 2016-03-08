@@ -9,12 +9,18 @@
 [![Deploy to Docker Cloud](https://github.com/yongjhih/docker-parse-server/raw/master/art/deploy-to-docker-cloud.png)](https://cloud.docker.com/stack/deploy/?repo=https://github.com/yongjhih/docker-influxdb-grafana)
 [![Deploy to Tutum](https://s.tutum.co/deploy-to-tutum.svg)](https://dashboard.tutum.co/stack/deploy/?repo=https://github.com/yongjhih/docker-influxdb-grafana)
 
-# Usage
+## Usage
 
 ```sh
 $ wget https://github.com/yongjhih/docker-influxdb-grafana/raw/master/docker-compose.yml
 $ docker-compose up
 ```
+
+## influxdb dashboard
+
+http://localhost:8083
+
+## grafana
 
 http://localhost:3000
 
