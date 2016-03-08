@@ -14,3 +14,5 @@ http://localhost:3000
 
 * user: admin
 * password: admin
+
+![](https://github.com/yongjhih/docker-influxdb-grafana/raw/master/art/screenshot-grafana-link-influxdb.png)
