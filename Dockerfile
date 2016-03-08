@@ -10,7 +10,6 @@ RUN apt-get update && \
     dpkg -i /tmp/influxdb.deb && \
     rm /tmp/influxdb.deb && \
     apt-get -y clean && \
-    apt-get autoremove --purge -y curl ca-certificates && \
     rm -rf /var/lib/apt/lists/*
 
 ADD types.db /usr/share/collectd/types.db

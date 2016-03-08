@@ -7,9 +7,10 @@ influxdb:
   environment:
     #ADMIN_USER: $INFLUXDB_ADMIN_USER
     #INFLUXDB_INIT_PWD: $INFLUXDB_INIT_PASSWORD
-    #PRE_CREATE_DB: $INFLUXDB_PRE_CREATE_DB # FIXME
+    #PRE_CREATE_DB: $INFLUXDB_PRE_CREATE_DB # "db1;db2;db3"
     ADMIN_USER: admin
     INFLUXDB_INIT_PWD: admin
+    PRE_CREATE_DB: db1;db2;db3
   volumes_from:
     - influxdb-data
 
