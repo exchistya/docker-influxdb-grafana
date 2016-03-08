@@ -1,6 +1,6 @@
 influxdb:
-  build: .
-  #image: yongjhih/influxdb
+  #build: .
+  image: yongjhih/influxdb
   ports:
     - "8083:8083"
     - "8086:8086"
@@ -15,8 +15,8 @@ influxdb:
     - influxdb-data
 
 influxdb-data:
-  build: .
-  #image: yongjhih/influxdb
+  #build: .
+  image: yongjhih/influxdb
   volumes:
     - /data
   command: /bin/true
