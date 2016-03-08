@@ -1,16 +1,21 @@
 influxdb:
-  #build: .
-  image: yongjhih/influxdb
+  build: .
+  #image: yongjhih/influxdb
   ports:
     - "8083:8083"
     - "8086:8086"
-  #environment:
+  environment:
+    #ADMIN_USER: $INFLUXDB_ADMIN_USER
+    #INFLUXDB_INIT_PWD: $INFLUXDB_INIT_PASSWORD
+    #PRE_CREATE_DB: $INFLUXDB_PRE_CREATE_DB # FIXME
+    ADMIN_USER: admin
+    INFLUXDB_INIT_PWD: admin
   volumes_from:
     - influxdb-data
 
 influxdb-data:
-  #build: .
-  image: yongjhih/influxdb
+  build: .
+  #image: yongjhih/influxdb
   volumes:
     - /data
   command: /bin/true
